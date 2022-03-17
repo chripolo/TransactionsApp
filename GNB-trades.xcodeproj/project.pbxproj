@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		768B518BD8A244CF704F74A2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; fileRef = A1058B0DDA8BCD75B0127D35 /* Alamofire */; };
+		FC09893527E2465500FA852A /* GNBRatesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09893427E2465400FA852A /* GNBRatesFetcher.swift */; };
+		FC09893727E250E100FA852A /* GNBTransactionsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09893627E250E100FA852A /* GNBTransactionsFetcher.swift */; };
+		FC09894127E2AE4700FA852A /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09894027E2AE4700FA852A /* DoubleExtension.swift */; };
+		FC09894327E2BD0B00FA852A /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09894227E2BD0B00FA852A /* ArrayExtension.swift */; };
+		FC09894527E2C09100FA852A /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09894427E2C09100FA852A /* Rates.swift */; };
+		FC09894727E2C0C600FA852A /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09894627E2C0C600FA852A /* Transactions.swift */; };
+		FC09894927E2C0F400FA852A /* NewRateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09894827E2C0F400FA852A /* NewRateList.swift */; };
+		FC22255F27DC1921005F1CD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22255E27DC1921005F1CD6 /* AppDelegate.swift */; };
+		FC22256127DC1921005F1CD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22256027DC1921005F1CD6 /* SceneDelegate.swift */; };
+		FC22256327DC1921005F1CD6 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22256227DC1921005F1CD6 /* ProductsViewController.swift */; };
+		FC22256627DC1921005F1CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC22256427DC1921005F1CD6 /* Main.storyboard */; };
+		FC22256827DC1924005F1CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC22256727DC1924005F1CD6 /* Assets.xcassets */; };
+		FC22256B27DC1924005F1CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC22256927DC1924005F1CD6 /* LaunchScreen.storyboard */; };
+		FC22257627DC93B2005F1CD6 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22257527DC93B2005F1CD6 /* Endpoints.swift */; };
+		FC22257A27DCA188005F1CD6 /* NewTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22257927DCA188005F1CD6 /* NewTransactionList.swift */; };
+		FCD4B6C527E333370031B803 /* TransactionEUR.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD4B6C427E333370031B803 /* TransactionEUR.swift */; };
+		FCD4B6C727E340CF0031B803 /* GNBTransactionsEUR.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD4B6C627E340CF0031B803 /* GNBTransactionsEUR.swift */; };
+		FCE7178B27E157C400ED7CD7 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE7178A27E157C300ED7CD7 /* TransactionsViewController.swift */; };
+		FCE7178D27E15DD800ED7CD7 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE7178C27E15DD800ED7CD7 /* ProductTableViewCell.swift */; };
+		FCE7178F27E1664900ED7CD7 /* TransactionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE7178E27E1664900ED7CD7 /* TransactionViewCell.swift */; };
+		FCE7179227E1784100ED7CD7 /* HTTPNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE7179127E1784100ED7CD7 /* HTTPNetworking.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1058B0DDA8BCD75B0127D35 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = "../../../../../../../../Desktop/NEGRI/TRABAJO/EJEMPLOS/Bemobile/GNB-trades/Pods/Alamofire"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF42FA057589CF8EE727F43E /* Pods-GNB-trades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNB-trades.debug.xcconfig"; path = "Target Support Files/Pods-GNB-trades/Pods-GNB-trades.debug.xcconfig"; sourceTree = "<group>"; };
+		F3CC42E8B7AA3908A5A2BBDF /* Pods-GNB-trades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNB-trades.release.xcconfig"; path = "Target Support Files/Pods-GNB-trades/Pods-GNB-trades.release.xcconfig"; sourceTree = "<group>"; };
+		FC09893427E2465400FA852A /* GNBRatesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBRatesFetcher.swift; sourceTree = "<group>"; };
+		FC09893627E250E100FA852A /* GNBTransactionsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBTransactionsFetcher.swift; sourceTree = "<group>"; };
+		FC09894027E2AE4700FA852A /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		FC09894227E2BD0B00FA852A /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		FC09894427E2C09100FA852A /* Rates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
+		FC09894627E2C0C600FA852A /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		FC09894827E2C0F400FA852A /* NewRateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRateList.swift; sourceTree = "<group>"; };
+		FC22255B27DC1921005F1CD6 /* GNB-trades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GNB-trades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC22255E27DC1921005F1CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC22256027DC1921005F1CD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FC22256227DC1921005F1CD6 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		FC22256527DC1921005F1CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC22256727DC1924005F1CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC22256A27DC1924005F1CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC22256C27DC1924005F1CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC22257527DC93B2005F1CD6 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		FC22257927DCA188005F1CD6 /* NewTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionList.swift; sourceTree = "<group>"; };
+		FCD4B6C427E333370031B803 /* TransactionEUR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEUR.swift; sourceTree = "<group>"; };
+		FCD4B6C627E340CF0031B803 /* GNBTransactionsEUR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBTransactionsEUR.swift; sourceTree = "<group>"; };
+		FCE7178A27E157C300ED7CD7 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		FCE7178C27E15DD800ED7CD7 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		FCE7178E27E1664900ED7CD7 /* TransactionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewCell.swift; sourceTree = "<group>"; };
+		FCE7179127E1784100ED7CD7 /* HTTPNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworking.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC22255827DC1920005F1CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768B518BD8A244CF704F74A2 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44407B2C62C7954BE52FD01A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1058B0DDA8BCD75B0127D35 /* Alamofire */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BC6383F813FF5E2D787F1E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF42FA057589CF8EE727F43E /* Pods-GNB-trades.debug.xcconfig */,
+				F3CC42E8B7AA3908A5A2BBDF /* Pods-GNB-trades.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC09893827E256C200FA852A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC22257527DC93B2005F1CD6 /* Endpoints.swift */,
+				FC09894427E2C09100FA852A /* Rates.swift */,
+				FC09894627E2C0C600FA852A /* Transactions.swift */,
+				FC09894827E2C0F400FA852A /* NewRateList.swift */,
+				FC22257927DCA188005F1CD6 /* NewTransactionList.swift */,
+				FCD4B6C427E333370031B803 /* TransactionEUR.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC09893927E2571D00FA852A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC09893C27E2592600FA852A /* Products */,
+				FC09893D27E2593300FA852A /* Transactions */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FC09893B27E2576900FA852A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FC22256427DC1921005F1CD6 /* Main.storyboard */,
+				FC22256927DC1924005F1CD6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FC09893C27E2592600FA852A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC22256227DC1921005F1CD6 /* ProductsViewController.swift */,
+				FCE7178C27E15DD800ED7CD7 /* ProductTableViewCell.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		FC09893D27E2593300FA852A /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				FCE7178A27E157C300ED7CD7 /* TransactionsViewController.swift */,
+				FCE7178E27E1664900ED7CD7 /* TransactionViewCell.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		FC09894A27E2C7DE00FA852A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC09894027E2AE4700FA852A /* DoubleExtension.swift */,
+				FC09894227E2BD0B00FA852A /* ArrayExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FC22255227DC1920005F1CD6 = {
+			isa = PBXGroup;
+			children = (
+				FC22255D27DC1921005F1CD6 /* GNB-trades */,
+				FC22255C27DC1921005F1CD6 /* Products */,
+				5BC6383F813FF5E2D787F1E9 /* Pods */,
+				44407B2C62C7954BE52FD01A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC22255C27DC1921005F1CD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC22255B27DC1921005F1CD6 /* GNB-trades.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC22255D27DC1921005F1CD6 /* GNB-trades */ = {
+			isa = PBXGroup;
+			children = (
+				FC22256C27DC1924005F1CD6 /* Info.plist */,
+				FC22255E27DC1921005F1CD6 /* AppDelegate.swift */,
+				FC22256027DC1921005F1CD6 /* SceneDelegate.swift */,
+				FCE7179027E177F800ED7CD7 /* Dependencies */,
+				FC09893827E256C200FA852A /* Model */,
+				FC09893927E2571D00FA852A /* ViewControllers */,
+				FC09893B27E2576900FA852A /* Storyboards */,
+				FC09894A27E2C7DE00FA852A /* Extensions */,
+				FC22256727DC1924005F1CD6 /* Assets.xcassets */,
+			);
+			path = "GNB-trades";
+			sourceTree = "<group>";
+		};
+		FCE7179027E177F800ED7CD7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				FCE7179127E1784100ED7CD7 /* HTTPNetworking.swift */,
+				FC09893427E2465400FA852A /* GNBRatesFetcher.swift */,
+				FC09893627E250E100FA852A /* GNBTransactionsFetcher.swift */,
+				FCD4B6C627E340CF0031B803 /* GNBTransactionsEUR.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC22255A27DC1920005F1CD6 /* GNB-trades */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC22256F27DC1924005F1CD6 /* Build configuration list for PBXNativeTarget "GNB-trades" */;
+			buildPhases = (
+				5B7C5A643A5AEFFB67879447 /* [CP] Check Pods Manifest.lock */,
+				FC22255727DC1920005F1CD6 /* Sources */,
+				FC22255827DC1920005F1CD6 /* Frameworks */,
+				FC22255927DC1920005F1CD6 /* Resources */,
+				21AE52D5666A1637FE9FFCD5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GNB-trades";
+			productName = "GNB-trades";
+			productReference = FC22255B27DC1921005F1CD6 /* GNB-trades.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC22255327DC1920005F1CD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					FC22255A27DC1920005F1CD6 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = FC22255627DC1920005F1CD6 /* Build configuration list for PBXProject "GNB-trades" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC22255227DC1920005F1CD6;
+			productRefGroup = FC22255C27DC1921005F1CD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC22255A27DC1920005F1CD6 /* GNB-trades */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC22255927DC1920005F1CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC22256B27DC1924005F1CD6 /* LaunchScreen.storyboard in Resources */,
+				FC22256827DC1924005F1CD6 /* Assets.xcassets in Resources */,
+				FC22256627DC1921005F1CD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21AE52D5666A1637FE9FFCD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNB-trades/Pods-GNB-trades-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNB-trades/Pods-GNB-trades-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNB-trades/Pods-GNB-trades-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B7C5A643A5AEFFB67879447 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNB-trades-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC22255727DC1920005F1CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC22257A27DCA188005F1CD6 /* NewTransactionList.swift in Sources */,
+				FC09894527E2C09100FA852A /* Rates.swift in Sources */,
+				FCE7179227E1784100ED7CD7 /* HTTPNetworking.swift in Sources */,
+				FC09894927E2C0F400FA852A /* NewRateList.swift in Sources */,
+				FCE7178F27E1664900ED7CD7 /* TransactionViewCell.swift in Sources */,
+				FC22256327DC1921005F1CD6 /* ProductsViewController.swift in Sources */,
+				FCD4B6C527E333370031B803 /* TransactionEUR.swift in Sources */,
+				FCD4B6C727E340CF0031B803 /* GNBTransactionsEUR.swift in Sources */,
+				FCE7178D27E15DD800ED7CD7 /* ProductTableViewCell.swift in Sources */,
+				FC09894727E2C0C600FA852A /* Transactions.swift in Sources */,
+				FC22255F27DC1921005F1CD6 /* AppDelegate.swift in Sources */,
+				FC22256127DC1921005F1CD6 /* SceneDelegate.swift in Sources */,
+				FC09894127E2AE4700FA852A /* DoubleExtension.swift in Sources */,
+				FC09893727E250E100FA852A /* GNBTransactionsFetcher.swift in Sources */,
+				FC09893527E2465500FA852A /* GNBRatesFetcher.swift in Sources */,
+				FC09894327E2BD0B00FA852A /* ArrayExtension.swift in Sources */,
+				FCE7178B27E157C400ED7CD7 /* TransactionsViewController.swift in Sources */,
+				FC22257627DC93B2005F1CD6 /* Endpoints.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC22256427DC1921005F1CD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC22256527DC1921005F1CD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC22256927DC1924005F1CD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC22256A27DC1924005F1CD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC22256D27DC1924005F1CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC22256E27DC1924005F1CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC22257027DC1924005F1CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF42FA057589CF8EE727F43E /* Pods-GNB-trades.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNDKTU4K4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GNB-trades/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cpolo.castano.GNB-trades";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC22257127DC1924005F1CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3CC42E8B7AA3908A5A2BBDF /* Pods-GNB-trades.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNDKTU4K4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GNB-trades/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cpolo.castano.GNB-trades";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC22255627DC1920005F1CD6 /* Build configuration list for PBXProject "GNB-trades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC22256D27DC1924005F1CD6 /* Debug */,
+				FC22256E27DC1924005F1CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC22256F27DC1924005F1CD6 /* Build configuration list for PBXNativeTarget "GNB-trades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC22257027DC1924005F1CD6 /* Debug */,
+				FC22257127DC1924005F1CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC22255327DC1920005F1CD6 /* Project object */;
+}
