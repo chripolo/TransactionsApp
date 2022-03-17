@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		768B518BD8A244CF704F74A2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; fileRef = A1058B0DDA8BCD75B0127D35 /* Alamofire */; };
+		BCE6BEC91FBAF84096E85F35 /* Pods_GNB_trades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C7E17DB58FA5B2D217FACF /* Pods_GNB_trades.framework */; };
 		FC09893527E2465500FA852A /* GNBRatesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09893427E2465400FA852A /* GNBRatesFetcher.swift */; };
 		FC09893727E250E100FA852A /* GNBTransactionsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09893627E250E100FA852A /* GNBTransactionsFetcher.swift */; };
 		FC09894127E2AE4700FA852A /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09894027E2AE4700FA852A /* DoubleExtension.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87C7E17DB58FA5B2D217FACF /* Pods_GNB_trades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNB_trades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1058B0DDA8BCD75B0127D35 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = "../../../../../../../../Desktop/NEGRI/TRABAJO/EJEMPLOS/Bemobile/GNB-trades/Pods/Alamofire"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF42FA057589CF8EE727F43E /* Pods-GNB-trades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNB-trades.debug.xcconfig"; path = "Target Support Files/Pods-GNB-trades/Pods-GNB-trades.debug.xcconfig"; sourceTree = "<group>"; };
 		F3CC42E8B7AA3908A5A2BBDF /* Pods-GNB-trades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNB-trades.release.xcconfig"; path = "Target Support Files/Pods-GNB-trades/Pods-GNB-trades.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768B518BD8A244CF704F74A2 /* Alamofire in Frameworks */,
+				BCE6BEC91FBAF84096E85F35 /* Pods_GNB_trades.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				A1058B0DDA8BCD75B0127D35 /* Alamofire */,
+				87C7E17DB58FA5B2D217FACF /* Pods_GNB_trades.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
